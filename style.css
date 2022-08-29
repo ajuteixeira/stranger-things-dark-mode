@@ -14,6 +14,7 @@
 body {
   font-family: 'Cinzel', serif;
   font-size: 38px;
+  user-select: none;
   transition: 2s;
   user-select: none;
   color: var(--font-color);

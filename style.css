@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-color: #222;
+  --bg-color: #fefefe
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+  --demogorgon-img: url("https://www.imagemhost.com.br/images/2022/08/29/demogorgon-black.png");
+}
+
+
+body {
+  font-family: 'Cinzel', serif;
+  font-size: 38px;
+  transition: 2s;
+  user-select: none;
+  color: var(--font-color);
+  background: var(--bg-color);
+}
+
+.dark-mode {
+  --font-color: #fefefe;
+  --bg-color: #222;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+  --demogorgon-img: url("https://www.imagemhost.com.br/images/2022/08/29/demogorgon-white.png");
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-change {
+  top: 4%;
+  left: 4%;
+  padding: 67px;
+  position: absolute;
+  cursor: pointer;
+  background-image: var(--label-icon);
+  background-repeat: no-repeat;
+}
+
+#btn {
+  display: none;
+}
+
+.demogorgon {
+  width: 350px;
+  height: 360px;
+  margin-bottom: 20px;
+  background-image: var(--demogorgon-img);
+  background-size: cover;
+}
+
+p {
+font-size: 2rem;
+text-align: center;
+}
